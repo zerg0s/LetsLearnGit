@@ -7,7 +7,11 @@ import alphabetClass
 # Точка входа в программу
 if __name__ == '__main__':
     try:
-        alphabetClass.Alphabet('abcdefghijklmnopqrstuvwxyz').print_range(input(), input())
+        first_str: str = input()
+        second_str: str = input()
+        if len(first_str) != len(second_str):
+           raise ValueError('Str lenghts not equals') 
+        alphabetClass.Alphabet('abcdefghijklmnopqrstuvwxyz').print_range(first_str, second_str)
     except ValueError as errors:
         print(errors)
         exit(1)
