@@ -12,11 +12,11 @@ def function_(beginning, ending, begin_with, first_iteration):
             if symbol == ord(ending[0]):
                 alphabetV2(beginning[1:], ending[1:], \
                     memory = ('' if begin_with == None else begin_with) + beginning[:1], \
-                    first_iter = first_iteration, last_iter=True)
+                    first_iter = first_iteration, last_iter = True)
             else:
                 alphabetV2(beginning[1:], ending[1:], \
                     memory = ('' if begin_with == None else begin_with) + beginning[:1], \
-                    first_iter = first_iteration, last_iter=False)
+                    first_iter = first_iteration, last_iter = False)
             first_iteration = False
             beginning = chr(ord(beginning[0]) + 1) + beginning[1:]
     else:
