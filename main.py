@@ -1,7 +1,11 @@
-import abcExample
+import abcWithStartAndFinish
 
-if __name__ == "__main__":
-    print("hello world")
-    start = input("Enter a start string: ")  # aaa
-    finish = input("Enter where to finish: ")  # aax
-    abcExample.abc(start, finish)
+if __name__ == '__main__':
+    start = str(input())
+    finish = str(input())
+    try:
+        print(start)
+        abcWithStartAndFinish.abc(start, finish)
+        print(finish)
+    except KeyError:
+        print("Для перебора вводятся только буквы")
