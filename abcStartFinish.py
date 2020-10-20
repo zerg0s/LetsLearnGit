@@ -1,7 +1,8 @@
 import string
 
 
-def abcv4(start, last):
+def abc(start, last):
+    print(start)
     alph = string.ascii_lowercase
     dic = {alph[i]: i + 1 for i in range(len(alph))}
     code1 = 0
@@ -25,3 +26,5 @@ def abcv4(start, last):
                 i = i - 1
         print(res)
         res = ''
+    print(last)
+
