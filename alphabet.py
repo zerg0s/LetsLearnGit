@@ -6,7 +6,7 @@ Task #891338
 М3О-121М-20
 '''
 
-def function_(beginning, ending, begin_with, first_iteration):
+def iteration_loop(beginning, ending, begin_with, first_iteration):
     if beginning[0] != ending[0]:
         for symbol in range(ord(beginning[0]), ord(ending[0])+1):
             if symbol == ord(ending[0]):
@@ -29,7 +29,7 @@ def alphabetV2(start, finish, memory = '', first_iter = True, last_iter = None):
     lenght = len(start)
 
     if last_iter == None and lenght != 1:
-        function_(start, finish, memory, first_iter)
+        iteration_loop(start, finish, memory, first_iter)
         return
 
     if last_iter == False:
@@ -43,5 +43,5 @@ def alphabetV2(start, finish, memory = '', first_iter = True, last_iter = None):
             print(f'{memory}{chr(symbol)}')
         return
 
-    function_(start, finish, memory, first_iter)
+    iteration_loop(start, finish, memory, first_iter)
     return
