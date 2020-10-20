@@ -91,9 +91,3 @@ def toAbc(num10: int):
                 newAbc = newAbc + alpha[1]
                 break
     return newAbc
-
-
-if __name__ == "__main__":
-    startString = input("Enter a start string: ")
-    finishString = input("Enter where to finish: ")
-    abc(startString, finishString)
