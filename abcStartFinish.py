@@ -1,7 +1,7 @@
 import string
 
 
-def abc(start, last):
+def abcv4(start, last):
     print(start)
     alph = string.ascii_lowercase
     dic = {alph[i]: i + 1 for i in range(len(alph))}
