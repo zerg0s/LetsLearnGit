@@ -1,35 +1,42 @@
-def getArrWords(x, y):
-    lenOffFstString, lenOffSecString = len(x), len(y)
+# Назовём это точкой входа в функцию
+# На вход принимает два данных типа string - это firstWord и secondWord.
+# Все проверки делает сам пользователь перед входом в функцию
+# После входа мы узнаём размер двух слов и заносим каждую букву в массив, после чего
+# переходим в функцию countWords
+def getArrWords(firstWord, secondWord):
+    lenOffFstString, lenOffSecString = len(firstWord), len(secondWord)
     resultStringFst, resultStringSec = [0] * lenOffFstString, [0] * lenOffSecString
-    for i in range(0, len(x)):
-        resultStringFst[i] = ord(x[i])
-    for j in range(0, len(y)):
-        resultStringSec[j] = ord(y[j])
+    for i in range(0, len(firstWord)):
+        resultStringFst[i] = ord(firstWord[i])
+    for j in range(0, len(secondWord)):
+        resultStringSec[j] = ord(secondWord[j])
     countWords(resultStringFst, 0, resultStringSec, lenOffSecString)
-    # for i in range(0, 26):
-    #     for j in range(0, 26):
-    #         while resultStringFst[2] != 123:
-    #             print(chr(resultStringFst[0]) + chr(resultStringFst[1]) + chr(resultStringFst[2]))
-    #             if resultStringFst[0] == resultStringSec[0] and resultStringFst[1] == resultStringSec[1] and resultStringFst[2] == resultStringSec[2]:
-    #                 return False
-    #             elif resultStringFst[2] == 123:
-    #                 resultStringFst[2] = 97
-    #                 break
-    #             resultStringFst[2] += 1
-    #         resultStringFst[1] += 1
-    #     resultStringFst[0] += 1
 
-def countWords(arrX, pos, finalArr, length) -> bool:
-    while arrX[pos] != 123:
-        if pos != length - 1:
-            pos += 1
-            countWords(arrX, pos, finalArr, length)
-        elif pos == length - 1:
-            for ij in range(0, pos + 1):
-                print(chr(arrX[ij]), end='')
+# Рекурсивная функция
+# Вызывает саму себя с целью найти конечную букву и выйти в предыдущую рекурсию
+# На вход получает 4 переменных - arrayToChange, position, finalArray, length
+# arrayToChange - массив, в котором будут происходить изменения
+# position - позиция старта
+# finalArray - массив, с которым мы будем сравнивать
+# length - длина массива
+# В функции имеются проверки для выхода.
+def countWords(arrayToChange, position, finalArray, length):
+    while arrayToChange[position] != 123:
+        if position != length - 1:  # Сравниваем размер данных в двух массивах
+            position += 1
+            countWords(arrayToChange, position, finalArray, length)
+            if arrayToChange[position] == finalArray[position]:
+                return
+        elif position == length - 1:    # Для вывода символа на печать
+            for ij in range(0, position + 1):
+                print(chr(arrayToChange[ij]), end='')
             print()
-        if (arrX[length - 1] == finalArr[pos]) and pos <= 122:
-            arrX[pos] = 97
-            return False
-        arrX[pos] += 1
-    return True
+        elif arrayToChange[position] == finalArray[position]:   # Если дошли до конечной точки
+            position -= 1
+            return
+        if arrayToChange[position] == finalArray[position] and\
+                arrayToChange[position - 1] == finalArray[position - 1]:
+            return
+        arrayToChange[position] += 1
+    arrayToChange[position] = 97
+    return
