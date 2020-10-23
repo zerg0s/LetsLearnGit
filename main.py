@@ -25,5 +25,3 @@ if __name__ == "__main__":
     except KeyError:
         print('Input string have unknown symbol')
         exit(2)
-
-        
