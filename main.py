@@ -27,3 +27,4 @@ if __name__ == "__main__":
         print('Input string have unknown symbol')
         exit(2)
     abcByRVS.alphabet(start, finish)
+

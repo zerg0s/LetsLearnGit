@@ -57,8 +57,8 @@ def abc(start, finish):
         exit(1)
 
     dif = from26to10base(diff(numB, numA))
-    for i in range(0, dif + 1):
-        print(''.join(map(lambda x: chr(x - SHIFT), numA)))
+    for i in range(0, dif+1):
+        print(''.join(map(lambda x: chr(x-SHIFT), numA)))
         incr(numA)
 '''
 Task #889099
@@ -101,7 +101,7 @@ def alphabetV2(start, finish, memory='', first_iter=True, last_iter=None):
         start = 'a' * lenght
 
     if lenght == 1:
-        for symbol in range(ord(start[0]), ord(finish[0]) + 1):
+        for symbol in range(ord(start[0]), ord(finish[0])+1):
             print(f'{memory}{chr(symbol)}')
         return
 
