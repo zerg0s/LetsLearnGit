@@ -4,6 +4,7 @@ import abcBySmolnaya
 import Alphabet_Overchuk
 import alphabet
 import alphabetClass
+import abcStartFinish
 
 if __name__ == "__main__":
     print("hello world")
@@ -17,6 +18,7 @@ if __name__ == "__main__":
     alphabet.alphabetV2(start, finish)
     try:
         alphabetClass.Alphabet('abcdefghijklmnopqrstuvwxyz').print_range(start, finish)
+        abcStartFinish.abcv4(start, finish)
     except ValueError as errors:
         print(errors)
         exit(1)
