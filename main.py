@@ -1,4 +1,4 @@
-from funcRodionov import getArrWords
+from abcByRVS import getArrWords
 
 if __name__ == "__main__":
     print("Fork")
