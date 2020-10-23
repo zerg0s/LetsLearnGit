@@ -9,6 +9,4 @@ sites/site*/public/theme/
 textpattern/
 HISTORY.txt
 README.txt
-main.py
-.idea/.gitignore
-.idea
+.idea/

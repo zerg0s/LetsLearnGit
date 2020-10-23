@@ -3,7 +3,7 @@
 # Все проверки делает сам пользователь перед входом в функцию
 # После входа мы узнаём размер двух слов и заносим каждую букву в массив, после чего
 # переходим в функцию countWords
-def getArrWords(firstWord, secondWord):
+def alphabet(firstWord, secondWord):
     lenOffFstString, lenOffSecString = len(firstWord), len(secondWord)
     resultStringFst, resultStringSec = [0] * lenOffFstString, [0] * lenOffSecString
     for i in range(0, len(firstWord)):
