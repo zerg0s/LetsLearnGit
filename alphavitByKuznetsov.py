@@ -35,6 +35,7 @@ def ticker(lstr1, lstr2, num=0):
 def abc(str1: str, str2: str):
     """Главный метод"""
     if check(str1, str2):
+        global finstr
         finstr = str2
         masStr1 = []
         masStr2 = []
