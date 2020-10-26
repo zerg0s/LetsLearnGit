@@ -5,7 +5,7 @@ import Alphabet_Overchuk
 import alphabet
 import alphabetClass
 import abcStartFinish
-import Boreiko_alphabet
+import boreikoAlphabet
 
 if __name__ == "__main__":
     print("hello world")
@@ -17,7 +17,7 @@ if __name__ == "__main__":
     abcExample.abc(start, finish)
     Alphabet_Overchuk.Alphabet(start, finish)
     alphabet.alphabetV2(start, finish)
-    Boreiko_alphabet.abc(start, finish)
+    boreikoAlphabet.alphabetIterating(start, finish)
     try:
         alphabetClass.Alphabet('abcdefghijklmnopqrstuvwxyz').print_range(start, finish)
         abcStartFinish.abcv4(start, finish)
