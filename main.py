@@ -6,6 +6,7 @@ import Alphabet_Overchuk
 import alphabet
 import alphabetClass
 import abcStartFinish
+import alphavitByKuznetsov
 import KremeshnayaABC
 import Alphabet_Morozov
 
@@ -13,6 +14,7 @@ if __name__ == "__main__":
     print("hello world")
     start = input("Enter a start string: ")  # aaa
     finish = input("Enter where to finish: ")  # aax
+    alphavitByKuznetsov.abc(start,finish)
     abcExample.abc(start, finish)
     KlokovABC.abc(start, finish)
     abcBySmolnaya.abc(start, finish)
