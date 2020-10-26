@@ -5,6 +5,7 @@ import Alphabet_Overchuk
 import alphabet
 import alphabetClass
 import abcStartFinish
+import alphSapunova
 
 if __name__ == "__main__":
     print("hello world")
@@ -16,6 +17,7 @@ if __name__ == "__main__":
     abcExample.abc(start, finish)
     Alphabet_Overchuk.Alphabet(start, finish)
     alphabet.alphabetV2(start, finish)
+    alphSapunova.alphIterate(start, finish)
     try:
         alphabetClass.Alphabet('abcdefghijklmnopqrstuvwxyz').print_range(start, finish)
         abcStartFinish.abcv4(start, finish)
