@@ -1,6 +1,6 @@
 import alphabet
 import abcExample
-import KlokovABC
+import abcKlokov
 import abcBySmolnaya
 import Alphabet_Overchuk
 import alphabet
@@ -16,7 +16,7 @@ if __name__ == "__main__":
     finish = input("Enter where to finish: ")  # aax
     alphavitByKuznetsov.abc(start,finish)
     abcExample.abc(start, finish)
-    KlokovABC.abc(start, finish)
+    abcKlokov.printIntermediateRows(start, finish)
     abcBySmolnaya.abc(start, finish)
     alphabet.abc(start, finish)
     abcExample.abc(start, finish)
