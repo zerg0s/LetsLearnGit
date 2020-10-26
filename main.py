@@ -6,6 +6,7 @@ import alphabet
 import alphabetClass
 import abcStartFinish
 import KremeshnayaABC
+import Alphabet_Morozov
 
 if __name__ == "__main__":
     print("hello world")
@@ -18,6 +19,7 @@ if __name__ == "__main__":
     Alphabet_Overchuk.Alphabet(start, finish)
     alphabet.alphabetV2(start, finish)
     KremeshnayaABC.abc(start, finish)
+    Alphabet_Morozov.printSortedStrings(start, finish)
     try:
         alphabetClass.Alphabet('abcdefghijklmnopqrstuvwxyz').print_range(start, finish)
         abcStartFinish.abcv4(start, finish)
