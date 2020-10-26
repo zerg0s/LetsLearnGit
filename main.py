@@ -25,6 +25,7 @@ if __name__ == "__main__":
     alphabet.alphabetV2(start, finish)
     abcKremeshnaya.alphabeticalProcessing(start, finish)
     Alphabet_Morozov.printSortedStrings(start, finish)
+    abcByRVS.alphabet(start, finish)
 
     try:
         alphabetClass.Alphabet('abcdefghijklmnopqrstuvwxyz').print_range(start, finish)
@@ -35,5 +36,3 @@ if __name__ == "__main__":
     except KeyError:
         print('Input string have unknown symbol')
         exit(2)
-    abcByRVS.alphabet(start, finish)
-
