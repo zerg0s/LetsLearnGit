@@ -6,8 +6,8 @@ import Alphabet_Overchuk
 import alphabet
 import alphabetClass
 import abcStartFinish
+import abcKremeshnaya
 import alphavitByKuznetsov
-import KremeshnayaABC
 import Alphabet_Morozov
 
 if __name__ == "__main__":
@@ -22,8 +22,9 @@ if __name__ == "__main__":
     abcExample.abc(start, finish)
     Alphabet_Overchuk.Alphabet(start, finish)
     alphabet.alphabetV2(start, finish)
-    KremeshnayaABC.abc(start, finish)
+    abcKremeshnaya.alphabeticalProcessing(start, finish)
     Alphabet_Morozov.printSortedStrings(start, finish)
+
     try:
         alphabetClass.Alphabet('abcdefghijklmnopqrstuvwxyz').print_range(start, finish)
         abcStartFinish.abcv4(start, finish)
