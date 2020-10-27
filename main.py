@@ -6,6 +6,7 @@ import Alphabet_Overchuk
 import alphabet
 import alphabetClass
 import abcStartFinish
+import boreikoAlphabet
 import alphSapunova
 import abcKremeshnaya
 import alphavitByKuznetsov
@@ -23,6 +24,7 @@ if __name__ == "__main__":
     abcExample.abc(start, finish)
     Alphabet_Overchuk.Alphabet(start, finish)
     alphabet.alphabetV2(start, finish)
+    boreikoAlphabet.alphabetIterating(start, finish)
     alphSapunova.alphIterate(start, finish)
     abcKremeshnaya.alphabeticalProcessing(start, finish)
     Alphabet_Morozov.printSortedStrings(start, finish)
