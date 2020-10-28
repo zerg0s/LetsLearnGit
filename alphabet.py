@@ -49,9 +49,9 @@ def abc(start, finish):
 
     # a = 97
     # z = 122
-    numA = [ord(e)+SHIFT for e in start]
-    numB = [ord(e)+SHIFT for e in finish]
-    
+    numA = [ord(e) + SHIFT for e in start]
+    numB = [ord(e) + SHIFT for e in finish]
+
     if isOver(numA, numB):
         print('Input Error.')
         exit(1)
@@ -70,21 +70,21 @@ Task #891338
 
 def iteration_loop(beginning, ending, begin_with, first_iteration):
     if beginning[0] != ending[0]:
-        for symbol in range(ord(beginning[0]), ord(ending[0])+1):
+        for symbol in range(ord(beginning[0]), ord(ending[0]) + 1):
             if symbol == ord(ending[0]):
                 alphabetV2(beginning[1:], ending[1:], \
-                    memory = ('' if begin_with == None else begin_with) + beginning[:1], \
-                    first_iter = first_iteration, last_iter = True)
+                           memory=('' if begin_with == None else begin_with) + beginning[:1], \
+                           first_iter=first_iteration, last_iter=True)
             else:
                 alphabetV2(beginning[1:], ending[1:], \
-                    memory = ('' if begin_with == None else begin_with) + beginning[:1], \
-                    first_iter = first_iteration, last_iter = False)
+                           memory=('' if begin_with == None else begin_with) + beginning[:1], \
+                           first_iter=first_iteration, last_iter=False)
             first_iteration = False
             beginning = chr(ord(beginning[0]) + 1) + beginning[1:]
     else:
-        alphabetV2(beginning[1:], ending[1:], memory = begin_with + beginning[0])
+        alphabetV2(beginning[1:], ending[1:], memory=begin_with + beginning[0])
 
-def alphabetV2(start, finish, memory = '', first_iter = True, last_iter = None):
+def alphabetV2(start, finish, memory='', first_iter=True, last_iter=None):
     if first_iter and (len(start) != len(finish) or len(start) == 0):
         return
 
