@@ -12,6 +12,7 @@ import alphSapunova
 import abcKremeshnaya
 import alphavitByKuznetsov
 import Alphabet_Morozov
+import alphabet_stasyuk
 
 if __name__ == "__main__":
     print("hello world")
@@ -33,6 +34,7 @@ if __name__ == "__main__":
         Alphabet_Morozov.printSortedStrings(start, finish)
         alphabetClass.Alphabet('abcdefghijklmnopqrstuvwxyz').print_range(start, finish)
         abcStartFinish.abcv4(start, finish)
+        alphabet_stasyuk.alphabet(start, finish)
     except ValueError as errors:
         print(errors)
         exit(1)
