@@ -4,7 +4,7 @@ def changeChar(text, char, index):
     return text[:index] + char + text[index + 1: len(text)]
 
 
-def convert_base(num, to_base=10, from_base=10):
+def convertBase(num, to_base=10, from_base=10):
     alphabet = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     if from_base == 26:
         for i in range(0, len(num)):
@@ -19,20 +19,20 @@ def convert_base(num, to_base=10, from_base=10):
     if n < to_base:
         return alphabet[n + shift]
     else:
-        return convert_base(n // to_base, to_base) + alphabet[n % to_base + shift]
+        return convertBase(n // to_base, to_base) + alphabet[n % to_base + shift]
 
 
-def Alphabet(startStr, endStr):
+def printAlphabet(startStr, endStr):
     try:
         startStr = startStr.upper()
         endStr = endStr.upper()
         if startStr > endStr:
             print("Строки должны быть одинаковой длинны и введены в алфавитном порядке")
         else:
-            start = int(convert_base(startStr, 10, 26))
-            end = int(convert_base(endStr, 10, 26))
+            start = int(convertBase(startStr, 10, 26))
+            end = int(convertBase(endStr, 10, 26))
             for number in range(start, end + 1):
-                tail = convert_base(number, 26, 10)
+                tail = convertBase(number, 26, 10)
                 print(("A" * (len(startStr) - len(tail)) + tail).lower())
     except ValueError:
         print("ERROR!")
