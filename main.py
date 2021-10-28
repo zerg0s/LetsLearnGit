@@ -3,6 +3,7 @@ from alphabet_task import printIterationOverStringsAlphabetically
 from ae_belousov_alphabet import print_char_combinations
 import AlphabetGit
 import abcByDanilov
+import Task_Chizh
 
 if __name__ == "__main__":
     print("Alphabet task has started :)")
@@ -23,3 +24,6 @@ if __name__ == "__main__":
 
     print("5th Solution")
     abcByDanilov.alp_start(start, finish)
+
+    print("6th Solution")
+    Task_Chizh.IterateStrings(start, finish)
