@@ -4,6 +4,7 @@ from ae_belousov_alphabet import print_char_combinations
 import AlphabetGit
 import abcByDanilov
 import alphabet_Bochkareva
+import Task_Chizh
 
 if __name__ == "__main__":
     print("Alphabet task has started :)")
@@ -27,3 +28,6 @@ if __name__ == "__main__":
     
     print("6th Solution")
     alphabet_Bochkareva.abc(start, finish)
+
+    print("7th Solution")
+    Task_Chizh.IterateStrings(start, finish)
