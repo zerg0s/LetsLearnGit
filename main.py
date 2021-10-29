@@ -1,15 +1,12 @@
 import Alphabet
-<<<<<<< HEAD
-import inepsha as alp
-=======
 from alphabet_task import printIterationOverStringsAlphabetically
 from ae_belousov_alphabet import print_char_combinations
 import AlphabetGit
 import abcByDanilov
 import alphabet_Bochkareva
 import TaskChizh
+import inepsha
 
->>>>>>> main
 
 if __name__ == "__main__":
     print("Alphabet task has started :)")
@@ -36,3 +33,6 @@ if __name__ == "__main__":
 
     print("7th Solution")
     TaskChizh.IterateStrings(start, finish)
+
+    print("8th Solution")
+    inepsha.alphabet(start, finish)
