@@ -3,22 +3,24 @@
 # Task Name: Алфавит
 
 def alphabet(str1, str2):
-    arrCh1 = list(map(ord, str1))
-    arrCh2 = list(map(ord, str2))
-    i = len(str1) - 1
-    print(''.join(map(chr, arrCh1)))
-    while (i != -1):
-        if arrCh1[i - 1] != arrCh2[i - 1]:
-            while (arrCh1[i] != 122):
-                arrCh1[i] += 1
-                print(''.join(map(chr, arrCh1)))
-            print(''.join(map(chr, arrCh1)))
-            arrCh1[i] += 97
-            arrCh1[i - 1] += 1
-        else:
-            i -=1
+    arrCh1 = list(map(ord, str1.lower()))
+    arrCh2 = list(map(ord, str2.lower()))
+    lastCh = len(str1) - 1
+    if len(arrCh1) == len(arrCh2):
+
         print(''.join(map(chr, arrCh1)))
-    return 1
+        while (''.join(map(chr, arrCh1)) != ''.join(map(chr, arrCh2))):
+            if arrCh1[-1] == 122:
+                j = lastCh
+                while arrCh1[j] == 122:
+                    arrCh1[j] = 97
+                    j -= 1
+                arrCh1[j] += 1
+            else:
+                arrCh1[-1] += 1
+            print(''.join(map(chr, arrCh1)))
+    else:
+        print("ERROR!")
 
 if __name__ == "__main__":
     print("hello world")
