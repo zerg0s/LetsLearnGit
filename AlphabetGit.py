@@ -1,5 +1,8 @@
-# Алфавит
-# Михайлов Ю.Ю. М30-121М-21
+# Created by Беликов Илья
+# Date 26.10
+# Task description: Алфавит
+
+
 def changeChar(text, char, index):
     return text[:index] + char + text[index + 1: len(text)]
 
