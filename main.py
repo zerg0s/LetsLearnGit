@@ -5,6 +5,7 @@ import AlphabetGit
 import abcByDanilov
 import alphabet_Bochkareva
 import TaskChizh
+import alphabetRoslavlev
 
 
 if __name__ == "__main__":
@@ -32,3 +33,6 @@ if __name__ == "__main__":
 
     print("7th Solution")
     TaskChizh.IterateStrings(start, finish)
+
+    print("8th Solution")
+    alphabetRoslavlev.printAlphabet(start, finish)
