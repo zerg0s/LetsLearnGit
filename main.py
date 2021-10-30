@@ -5,6 +5,7 @@ import AlphabetGit
 import abcByDanilov
 import alphabet_Bochkareva
 import TaskChizh
+import another_alphabet
 
 
 if __name__ == "__main__":
@@ -26,9 +27,12 @@ if __name__ == "__main__":
 
     print("5th Solution")
     abcByDanilov.alp_start(start, finish)
-    
+
     print("6th Solution")
     alphabet_Bochkareva.abc(start, finish)
 
     print("7th Solution")
     TaskChizh.IterateStrings(start, finish)
+
+    print("another one solution")
+    another_alphabet.print_strings_lexicographically(start, finish)
