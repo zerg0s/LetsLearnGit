@@ -6,6 +6,7 @@ import abcByDanilov
 import alphabet_Bochkareva
 import TaskChizh
 import alphabetByDiana
+import inepsha
 
 
 if __name__ == "__main__":
@@ -36,3 +37,6 @@ if __name__ == "__main__":
     
     print("8th Solution")
     alphabetByDiana.checkAssepted(start, finish)
+
+    print("9th Solution")
+    inepsha.alphabet(start, finish)
