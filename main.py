@@ -6,7 +6,7 @@ import abcByDanilov
 import alphabet_Bochkareva
 import TaskChizh
 import alphabetByDiana
-
+import SimkinGit
 
 if __name__ == "__main__":
     print("Alphabet task has started :)")
@@ -27,12 +27,15 @@ if __name__ == "__main__":
 
     print("5th Solution")
     abcByDanilov.alp_start(start, finish)
-    
+
     print("6th Solution")
     alphabet_Bochkareva.abc(start, finish)
 
     print("7th Solution")
     TaskChizh.IterateStrings(start, finish)
-    
+
     print("8th Solution")
     alphabetByDiana.checkAssepted(start, finish)
+
+    print("9th Solution")
+    SimkinGit.change_iteration(start, finish)
