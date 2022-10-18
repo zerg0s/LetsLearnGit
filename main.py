@@ -1,4 +1,4 @@
-from Alfavit import printIterationOverStringsAlphabetically
+from alphabet import printIterationOverStringsAlphabetically
 
 if __name__ == "__main__":
     print("Alphabet task has started :)")
