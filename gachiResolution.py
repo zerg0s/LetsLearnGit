@@ -2,10 +2,10 @@
 def print_string_interval(start, finish):
     # Валидация строк
     if len(start) != len(finish):
-        raise RuntimeError("ERROR! String must be the same length!")
+        raise ValueError("ERROR! String must be the same length!")
 
     if start > finish:
-        raise RuntimeError("ERROR! start must be <= finish")
+        raise ValueError("ERROR! start must be <= finish")
 
     check_string(start)
     check_string(finish)
@@ -30,4 +30,4 @@ def next_string(accumulator, pointer):
 def check_string(string):
     for char in string:
         if char < 'a' or char > 'z':
-            raise RuntimeError("ERROR! String must contains only a-z chars!")
+            raise ValueError("ERROR! String must contains only a-z chars!")

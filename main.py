@@ -12,5 +12,5 @@ if __name__ == "__main__":
     print("Gachi solution")
     try:
         print_string_interval(start, finish)
-    except RuntimeError as ex:
+    except ValueError as ex:
         print(ex)
