@@ -1,20 +1,18 @@
-from Alfavit import printIterationOverStringsAlphabetically
-from gachiResolution import print_string_interval
-from alphabet import print_alphabet_values
+import sys
+
+from alphabet import create_next_string
 
 if __name__ == "__main__":
-    print("Alphabet task has started :)")
-    start = input("Enter a start string: ")  # aaa
-    finish = input("Enter where to finish: ")  # aba
+    def main():
+        s1 = input()
+        s2 = input()
 
-    print("First solution")
-    printIterationOverStringsAlphabetically(start, finish)
+        if len(s1) != len(s2):
+            sys.exit(1)
 
-    print("Gachi solution")
-    try:
-        print_string_interval(start, finish)
-    except ValueError as ex:
-        print(ex)
+        else:
+            print(s1)
+            while s1 != s2:
+                s1 = create_next_string(s1)
+                print(s1)
 
-    print("Third solution")
-    print_alphabet_values(start, finish)
