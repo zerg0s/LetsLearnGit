@@ -19,6 +19,7 @@ def gen_next(s):
 
     return ''.join(map(str, s))  # вернем результат, сделав из списка строку
 
+
 def main():
     # входные данные
     s1 = input()
