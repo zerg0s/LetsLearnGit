@@ -1,4 +1,5 @@
 from Alfavit import printIterationOverStringsAlphabetically
+from alphabet_t import strings_wrapper
 from gachiResolution import print_string_interval
 from alphabet import print_alphabet_values
 
@@ -18,3 +19,6 @@ if __name__ == "__main__":
 
     print("Third solution")
     print_alphabet_values(start, finish)
+
+    print("Tim solution")
+    strings_wrapper(start, finish)
