@@ -33,4 +33,7 @@ if __name__ == "__main__":
     dummyAlphabet(start, finish)
 
     print("Denis' solution")
-    ascii_alphabet_solution(start, finish)
+    try:
+        ascii_alphabet_solution(start, finish)
+    except ValueError as ex:
+        print(ex)
