@@ -4,7 +4,6 @@ from gachiResolution import print_string_interval
 from alfavit_e import gen_generation
 from alphabet import print_alphabet_values
 from alphabetByRoman import dummyAlphabet
-from XavierAlphabet import ascii_alphabet_solution
 
 if __name__ == "__main__":
     print("Alphabet task has started :)")
@@ -31,9 +30,3 @@ if __name__ == "__main__":
     
     print("Roman's solution")
     dummyAlphabet(start, finish)
-
-    print("Denis' solution")
-    try:
-        ascii_alphabet_solution(start, finish)
-    except ValueError as ex:
-        print(ex)
