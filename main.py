@@ -5,6 +5,7 @@ from alfavit_e import gen_generation
 from alphabet import print_alphabet_values
 from alphabetByRoman import dummyAlphabet
 from alphabet_pashtet import printAlphabetByPashtet
+from XavierAlphabet import ascii_alphabet_solution
 
 if __name__ == "__main__":
     print("Alphabet task has started :)")
@@ -34,3 +35,8 @@ if __name__ == "__main__":
 
     print("Pashtet's solution")
     printAlphabetByPashtet(start, finish)
+
+    try:
+        ascii_alphabet_solution(start, finish)
+    except ValueError as ex:
+        print(ex)
