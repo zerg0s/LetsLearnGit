@@ -45,6 +45,7 @@ if __name__ == "__main__":
 
     try:
         ascii_alphabet_solution(start, finish)
+        print("Basil Antonov solution")
         an21.printIterationOverStringsAlphabetically(start, finish)
     except ValueError as ex:
         print(ex)
