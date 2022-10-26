@@ -41,8 +41,6 @@ if __name__ == "__main__":
     print("DocNemo's solution")
     printAlphabetSequence(start, finish)
 
-    print("Basil Antonov solution")
-
     try:
         ascii_alphabet_solution(start, finish)
         print("Basil Antonov solution")
