@@ -42,12 +42,9 @@ if __name__ == "__main__":
     printAlphabetSequence(start, finish)
 
     print("Basil Antonov solution")
-    try:
-        an21.printIterationOverStringsAlphabetically(start, finish)
-    except ValueError as e:
-        print(e)
 
     try:
         ascii_alphabet_solution(start, finish)
+        an21.printIterationOverStringsAlphabetically(start, finish)
     except ValueError as ex:
         print(ex)
