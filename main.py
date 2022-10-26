@@ -1,4 +1,5 @@
 from Alfavit import printIterationOverStringsAlphabetically
+from alphabetDocNemo import printAlphabetSequence
 from alphabet_t import strings_wrapper
 from gachiResolution import print_string_interval
 from alfavit_e import gen_generation
@@ -29,12 +30,15 @@ if __name__ == "__main__":
 
     print("Maxim solution")
     gen_generation(start, finish)
-    
+
     print("Roman's solution")
     dummyAlphabet(start, finish)
 
     print("Pashtet's solution")
     printAlphabetByPashtet(start, finish)
+
+    print("DocNemo's solution")
+    printAlphabetSequence(start, finish)
 
     try:
         ascii_alphabet_solution(start, finish)
