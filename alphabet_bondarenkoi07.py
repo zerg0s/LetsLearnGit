@@ -1,3 +1,6 @@
+import sys
+from datetime import datetime
+
 TWENTY_FIVE = ord("z")
 ZERO = ord("a")
 BASE = TWENTY_FIVE - ZERO + 1
@@ -36,11 +39,13 @@ def PrintAlphabetNumbers(start_str: str, finish_str: str):
         start_dec, finish_dec = finish_dec, start_dec
 
     for i in range(start_dec, finish_dec + 1):
-        print(AlphabetNumber.ToAlphabet(i, len(start_str)))
+        sys.stdout.write(
+            AlphabetNumber.ToAlphabet(i, len(start_str)) + "\n"
+        )  # print: ~4 min, sys.stdout.write:53.989473 sec
 
 
 if __name__ == "__main__":
-    start = input()
-    finish = input()
+    start = "".join("a" for i in range(0, 5))
+    finish = "".join("z" for i in range(0, 5))
 
     PrintAlphabetNumbers(start, finish)
