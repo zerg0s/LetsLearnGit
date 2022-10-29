@@ -1,5 +1,5 @@
-TWENTY_FIVE = ord('z')
-ZERO = ord('a')
+TWENTY_FIVE = ord("z")
+ZERO = ord("a")
 BASE = TWENTY_FIVE - ZERO + 1
 
 
@@ -22,7 +22,7 @@ class AlphabetNumber:
         order = 0
         number = 0
         for rune in reversed(alph_number):
-            number += (ord(rune) - ZERO) * BASE ** order
+            number += (ord(rune) - ZERO) * BASE**order
             order += 1
 
         return number
