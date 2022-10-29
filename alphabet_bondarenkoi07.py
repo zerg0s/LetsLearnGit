@@ -1,5 +1,4 @@
 import sys
-from datetime import datetime
 
 TWENTY_FIVE = ord("z")
 ZERO = ord("a")
@@ -45,7 +44,7 @@ def PrintAlphabetNumbers(start_str: str, finish_str: str):
 
 
 if __name__ == "__main__":
-    start = "".join("a" for i in range(0, 5))
-    finish = "".join("z" for i in range(0, 5))
+    start = input()
+    finish = input()
 
     PrintAlphabetNumbers(start, finish)
