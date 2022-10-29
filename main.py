@@ -43,11 +43,12 @@ if __name__ == "__main__":
 
     print("DocNemo's solution")
     printAlphabetSequence(start, finish)
-    
+
     try:
-      PrintAlphabetNumbers(start, finish)
+        print("bondarenkoi07 solution")
+        PrintAlphabetNumbers(start, finish)
     except ValueError:
-      print("ERROR!")
+        print("ERROR!")
 
     try:
         ascii_alphabet_solution(start, finish)
