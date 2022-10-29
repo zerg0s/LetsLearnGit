@@ -1,4 +1,4 @@
-from Alfavit import printIterationOverStringsAlphabetically
+from alphabet import PrintAlphabetNumbers
 
 if __name__ == "__main__":
     print("Alphabet task has started :)")
@@ -6,4 +6,4 @@ if __name__ == "__main__":
     finish = input("Enter where to finish: ")  # aba
 
     print("First solution")
-    printIterationOverStringsAlphabetically(start, finish)
+    PrintAlphabetNumbers(start, finish)

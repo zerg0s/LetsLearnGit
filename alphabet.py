@@ -28,14 +28,19 @@ class AlphabetNumber:
         return number
 
 
-def PrintAlphabetNumbers(start: str, finish: str):
-    start_dec = AlphabetNumber.ToDec(start)
-    print(f"start {start} dec {start_dec}")
-    finish_dec = AlphabetNumber.ToDec(finish)
-    print(f"finish {finish} dec {finish_dec}")
+def PrintAlphabetNumbers(start_str: str, finish_str: str):
+    start_dec = AlphabetNumber.ToDec(start_str)
+    finish_dec = AlphabetNumber.ToDec(finish_str)
+
+    if start_dec > finish_dec:
+        start_dec, finish_dec = finish_dec, start_dec
 
     for i in range(start_dec, finish_dec + 1):
-        print(AlphabetNumber.ToAlphabet(i, len(start)))
+        print(AlphabetNumber.ToAlphabet(i, len(start_str)))
 
 
-PrintAlphabetNumbers("bcd", "bza")
+if __name__ == "__main__":
+    start = input()
+    finish = input()
+
+    PrintAlphabetNumbers(start, finish)
