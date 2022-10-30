@@ -8,6 +8,7 @@ from alphabetByRoman import dummyAlphabet
 from alphabet_pashtet import printAlphabetByPashtet
 from XavierAlphabet import ascii_alphabet_solution
 import basil_antonov as an21
+from AlphabetXXMargoRitaXX import alphabet_printing
 
 if __name__ == "__main__":
     print("Alphabet task has started :)")
@@ -47,3 +48,6 @@ if __name__ == "__main__":
         an21.printIterationOverStringsAlphabetically(start, finish)
     except ValueError as ex:
         print(ex)
+
+    print("XXMargoRitaXX's solution")
+    alphabet_printing(start, finish)
