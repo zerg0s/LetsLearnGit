@@ -8,6 +8,7 @@ from alphabetByRoman import dummyAlphabet
 from alphabet_pashtet import printAlphabetByPashtet
 from XavierAlphabet import ascii_alphabet_solution
 import basil_antonov as an21
+from AlphabetBySil import AlphabetBySil
 
 if __name__ == "__main__":
     print("Alphabet task has started :)")
