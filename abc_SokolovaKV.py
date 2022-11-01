@@ -15,11 +15,11 @@ def containNumbers(value, l):
         if i in value:
             return 1
     return 0
-def generalFunc():
+def generalFunc(str1,str2):
     list_ = ["0","1","2","3","4","5","6","7","8","9"]
     try:
-        str1 = str(input())
-        str2 = str(input())
+##        str1 = str(input())
+##        str2 = str(input())
         if containNumbers(str1, list_) == 1 or containNumbers(str2, list_) == 1:
             print('введенные значения содержат цифры')
         elif str1 == str2:

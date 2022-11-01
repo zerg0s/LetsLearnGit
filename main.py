@@ -7,6 +7,7 @@ from alphabet import print_alphabet_values
 from alphabetByRoman import dummyAlphabet
 from alphabet_pashtet import printAlphabetByPashtet
 from XavierAlphabet import ascii_alphabet_solution
+from abc_SokolovaKV import generalFunc
 import basil_antonov as an21
 
 if __name__ == "__main__":
@@ -40,6 +41,10 @@ if __name__ == "__main__":
 
     print("DocNemo's solution")
     printAlphabetSequence(start, finish)
+
+    print("SokolovaKv's solution")
+    generalFunc(start, finish)
+    
 
     try:
         ascii_alphabet_solution(start, finish)
