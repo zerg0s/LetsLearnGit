@@ -24,7 +24,7 @@ class AlphabetNumber:
         order = 0
         number = 0
         for rune in reversed(alph_number):
-            number += (ord(rune) - ZERO) * BASE**order
+            number += (ord(rune) - ZERO) * BASE ** order
             order += 1
 
         return number
@@ -41,10 +41,3 @@ def PrintAlphabetNumbers(start_str: str, finish_str: str):
         sys.stdout.write(
             AlphabetNumber.ToAlphabet(i, len(start_str)) + "\n"
         )  # print: ~4 min, sys.stdout.write:53.989473 sec
-
-
-if __name__ == "__main__":
-    start = input()
-    finish = input()
-
-    PrintAlphabetNumbers(start, finish)

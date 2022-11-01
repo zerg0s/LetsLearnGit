@@ -47,12 +47,8 @@ if __name__ == "__main__":
     try:
         print("bondarenkoi07 solution")
         PrintAlphabetNumbers(start, finish)
-    except ValueError:
-        print("ERROR!")
-
-    try:
-        ascii_alphabet_solution(start, finish)
         print("Basil Antonov solution")
+        ascii_alphabet_solution(start, finish)
         an21.printIterationOverStringsAlphabetically(start, finish)
     except ValueError as ex:
         print(ex)
