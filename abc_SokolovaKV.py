@@ -15,7 +15,7 @@ def containNumbers(value, l):
         if i in value:
             return 1
     return 0
-def main():
+def generalFunc():
     list_ = ["0","1","2","3","4","5","6","7","8","9"]
     try:
         str1 = str(input())
