@@ -35,6 +35,10 @@ if __name__ == "__main__":
 
     print("Roman's solution")
     dummyAlphabet(start, finish)
+    
+    print("AlphabetBySil")
+    AlphabetBySil(start, finish)
+
 
     print("Pashtet's solution")
     printAlphabetByPashtet(start, finish)
