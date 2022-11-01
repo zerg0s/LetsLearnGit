@@ -45,10 +45,10 @@ if __name__ == "__main__":
     printAlphabetSequence(start, finish)
 
     try:
-        print("bondarenkoi07 solution")
-        PrintAlphabetNumbers(start, finish)
         print("Basil Antonov solution")
         ascii_alphabet_solution(start, finish)
         an21.printIterationOverStringsAlphabetically(start, finish)
+        print("bondarenkoi07 solution")
+        PrintAlphabetNumbers(start, finish)
     except ValueError as ex:
         print(ex)
