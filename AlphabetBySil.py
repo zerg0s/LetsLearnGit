@@ -1,6 +1,6 @@
 def printAlphabet(line1, line2):
     try:
-        checkLine(line1, line2)
+        checkStrings(line1, line2)
         word = list(line1)
         strValue = len(line1)
         i = strValue - 1
