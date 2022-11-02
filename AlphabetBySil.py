@@ -1,6 +1,6 @@
 def printAlphabet(line1, line2):
     try:
-        checkStrings(line1, line2)
+        checkLine(line1, line2)
         word = list(line1)
         strValue = len(line1)
         i = strValue - 1
@@ -17,14 +17,14 @@ def printAlphabet(line1, line2):
         print("Error!")
 
 
-def cheks(line1, line2):
+def checkLine(line1, line2):
     if len(line1) != len(line2):
-        print("Error!")
+        raise ValueError
     if line1 > line2:
-        print("Error!")
+        raise ValueError
     for x in line1:
         if not 'a' <= x <= 'z':
-            print("Error!")
+            raise ValueError
     for y in line2:
         if not 'a' <= y <= 'z':
-            print("Error!")
+            raise ValueError
