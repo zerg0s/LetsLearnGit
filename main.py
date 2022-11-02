@@ -37,8 +37,7 @@ if __name__ == "__main__":
     dummyAlphabet(start, finish)
     
     print("AlphabetBySil's solution")
-    AlphabetBySil(start, finish)
-
+    printAlphabet(start, finish)
 
     print("Pashtet's solution")
     printAlphabetByPashtet(start, finish)
