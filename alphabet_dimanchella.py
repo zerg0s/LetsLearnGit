@@ -1,5 +1,5 @@
-A_CODE = 97
-Z_CODE = 122
+A_CODE = ord('a')
+Z_CODE = ord('z')
 ERROR_CODE = -1
 ERROR_STRING = "ERROR!"
 
