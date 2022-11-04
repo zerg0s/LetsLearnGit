@@ -1,3 +1,4 @@
+from alphabet_bondarenkoi07 import PrintAlphabetNumbers
 from Alfavit import printIterationOverStringsAlphabetically
 from alphabetDocNemo import printAlphabetSequence
 from alphabet_t import strings_wrapper
@@ -8,7 +9,8 @@ from alphabetByRoman import dummyAlphabet
 from alphabet_pashtet import printAlphabetByPashtet
 from XavierAlphabet import ascii_alphabet_solution
 import basil_antonov as an21
-from AlphabetXXMargoRitaXX import alphabet_printing
+from AlphabetBySil import AlphabetBySil
+
 
 if __name__ == "__main__":
     print("Alphabet task has started :)")
@@ -16,6 +18,7 @@ if __name__ == "__main__":
     finish = input("Enter where to finish: ")  # aba
 
     print("First solution")
+
     printIterationOverStringsAlphabetically(start, finish)
 
     print("Gachi solution")
@@ -36,6 +39,9 @@ if __name__ == "__main__":
     print("Roman's solution")
     dummyAlphabet(start, finish)
 
+    print("AlphabetBySil's solution")
+    printAlphabet(start, finish)
+
     print("Pashtet's solution")
     printAlphabetByPashtet(start, finish)
 
@@ -43,11 +49,10 @@ if __name__ == "__main__":
     printAlphabetSequence(start, finish)
 
     try:
-        ascii_alphabet_solution(start, finish)
         print("Basil Antonov solution")
+        ascii_alphabet_solution(start, finish)
         an21.printIterationOverStringsAlphabetically(start, finish)
+        print("bondarenkoi07 solution")
+        PrintAlphabetNumbers(start, finish)
     except ValueError as ex:
         print(ex)
-
-    print("XXMargoRitaXX's solution")
-    alphabet_printing(start, finish)
