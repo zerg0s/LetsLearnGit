@@ -9,8 +9,8 @@ from alphabetByRoman import dummyAlphabet
 from alphabet_pashtet import printAlphabetByPashtet
 from XavierAlphabet import ascii_alphabet_solution
 import basil_antonov as an21
-from AlphabetBySil import AlphabetBySil
-
+from AlphabetBySil import printAlphabet
+from AlphabetXXMargoRitaXX import alphabet_printing
 
 if __name__ == "__main__":
     print("Alphabet task has started :)")
@@ -38,7 +38,7 @@ if __name__ == "__main__":
 
     print("Roman's solution")
     dummyAlphabet(start, finish)
-    
+
     print("AlphabetBySil's solution")
     printAlphabet(start, finish)
 
@@ -56,3 +56,6 @@ if __name__ == "__main__":
         PrintAlphabetNumbers(start, finish)
     except ValueError as ex:
         print(ex)
+
+    print("XXMargoRitaXX's solution")
+    alphabet_printing(start, finish)
