@@ -5,12 +5,12 @@ def character_checking(line):
     # Проверка, что введенная строка состоит только из строчных символов латиницы
     for symbol in line:
         if symbol < 'a' or symbol > 'z':
-            raise ValueError("ERROR")
+            raise ValueError
 
 
 def alphabet_printing(start_line, finish_line):
     if len(start_line) != len(finish_line) or start_line > finish_line:
-        raise ValueError("ERROR")
+        raise ValueError
     character_checking(start_line)
     character_checking(finish_line)
 

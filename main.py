@@ -58,4 +58,7 @@ if __name__ == "__main__":
         print(ex)
 
     print("XXMargoRitaXX's solution")
-    alphabet_printing(start, finish)
+    try:
+        alphabet_printing(start, finish)
+    except ValueError:
+        print("ERROR")
