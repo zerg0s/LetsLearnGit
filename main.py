@@ -11,7 +11,7 @@ from XavierAlphabet import ascii_alphabet_solution
 import basil_antonov as an21
 from AlphabetBySil import printAlphabet
 from alphabet_dimanchella import print_iterating_strs
-
+from AlphabetXXMargoRitaXX import alphabet_printing
 
 if __name__ == "__main__":
     print("Alphabet task has started :)")
@@ -39,7 +39,7 @@ if __name__ == "__main__":
 
     print("Roman's solution")
     dummyAlphabet(start, finish)
-    
+
     print("AlphabetBySil's solution")
     printAlphabet(start, finish)
 
@@ -60,3 +60,9 @@ if __name__ == "__main__":
 
     print("Dimanchella's solution")
     print_iterating_strs(start, finish)
+    
+    print("XXMargoRitaXX's solution")
+    try:
+        alphabet_printing(start, finish)
+    except ValueError:
+        print("ERROR")
