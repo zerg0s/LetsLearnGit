@@ -22,11 +22,6 @@ if __name__ == "__main__":
 
     printIterationOverStringsAlphabetically(start, finish)
 
-    print("Gachi solution")
-    try:
-        print_string_interval(start, finish)
-    except ValueError as ex:
-        print(ex)
 
     print("Third solution")
     print_alphabet_values(start, finish)
@@ -55,14 +50,13 @@ if __name__ == "__main__":
         an21.printIterationOverStringsAlphabetically(start, finish)
         print("bondarenkoi07 solution")
         PrintAlphabetNumbers(start, finish)
-    except ValueError as ex:
+        print("XXMargoRitaXX's solution")
+        alphabet_printing(start, finish)
+        print("Gachi solution")
+        print_string_interval(start, finish)
+     except ValueError as ex:
         print(ex)
 
     print("Dimanchella's solution")
     print_iterating_strs(start, finish)
     
-    print("XXMargoRitaXX's solution")
-    try:
-        alphabet_printing(start, finish)
-    except ValueError:
-        print("ERROR")
