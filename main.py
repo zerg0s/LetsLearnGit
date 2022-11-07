@@ -9,7 +9,8 @@ from alphabetByRoman import dummyAlphabet
 from alphabet_pashtet import printAlphabetByPashtet
 from XavierAlphabet import ascii_alphabet_solution
 import basil_antonov as an21
-from AlphabetBySil import AlphabetBySil
+from AlphabetBySil import printAlphabet
+from alphabet_dimanchella import print_iterating_strs
 
 
 if __name__ == "__main__":
@@ -56,3 +57,6 @@ if __name__ == "__main__":
         PrintAlphabetNumbers(start, finish)
     except ValueError as ex:
         print(ex)
+
+    print("Dimanchella's solution")
+    print_iterating_strs(start, finish)
